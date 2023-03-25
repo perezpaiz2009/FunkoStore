@@ -1,0 +1,13 @@
+
+  
+  .third {
+    border-color: #3498db !important;
+    color: #fff !important;
+    box-shadow: 0 0 40px 40px #3498db inset, 0 0 0 0 #3498db !important;
+    -webkit-transition: all 150ms ease-in-out !important;
+    transition: all 150ms ease-in-out !important;
+  }
+  .third:hover {
+    box-shadow: 0 0 10px 0 #3498db inset, 0 0 10px 4px #3498db !important;
+  }
+  

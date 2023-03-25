@@ -1,12 +1,12 @@
 :root {
 
-    --primario: #983dc9;
-    --primarioOscuro: #753591;
-    --secundario: #FFBA08;
+    --primario: #005377;
+    --primarioOscuro: #06A77D;
+    --secundario: #F1A208;
     --secundarioOscuro: #b6860e;
     --blanco: #fff;
     --negro: #000;
-    --fuentePrincipal: 'Rakkas', cursive;
+    --fuentePrincipal: "Raleway", "HelveticaNeue", "Helvetica Neue", Helvetica, Arial, sans-serif;
 }
 
 /* apply a natural box layout model to all elements, but allowing components to change */
@@ -21,18 +21,24 @@ html {
     box-sizing: inherit;
 }
 
+
 body {
 
     background-color: var(--primario);
     font-size: 1.5rem;
     line-height: 1.5;
     /* Base de la fuente*/
+
+}
+
+h4 {
+    font-size: 16px;
+    font-weight: 700;
 }
 
 p {
 
     font-size: 1.8rem;
-    font-family: Arial, Helvetica, sans-serif;
     color: var(--blanco);
 }
 
@@ -43,6 +49,12 @@ a {
 
 img {
     width: 100%;
+
+}
+
+.tamañoimgcarrito {
+    height: 15rem;
+    width: 15rem;
 }
 
 .contenedor {
@@ -59,7 +71,9 @@ h3 {
 }
 
 h1 {
+    margin: 1rem;
     font-size: 4rem;
+    font-weight: 700;
 }
 
 h2 {
@@ -136,11 +150,13 @@ h3 {
     }
 }
 
+
+
 /* Producto*/
 .producto {
     background-color: var(--primarioOscuro);
     padding: 1rem;
-
+    display: grid;
 }
 
 .producto__nombre {
@@ -151,6 +167,9 @@ h3 {
     color: var(--secundario);
     font-size: 2.8rem;
 }
+
+
+
 
 .producto__nombre,
 .producto__precio {
@@ -178,6 +197,40 @@ h3 {
     grid-row: 8 / 9;
 }
 
+.mediana {
+    width: 34rem;
+    height: 25rem;
+}
+
+@media (min-width: 480px) {
+
+    .mediana {
+        width: 21rem;
+        height: 16rem;
+    }
+
+    .producto {
+
+        justify-content: space-between;
+        align-content: space-around;
+
+    }
+}
+
+.btn {
+    text-transform: uppercase;
+    font-size: 1.5rem;
+
+
+}
+
+.producto {
+    display: grid;
+    justify-content: center;
+    align-content: center;
+    justify-items: center;
+}
+
 
 
 @media (min-width: 768px) {
@@ -185,6 +238,35 @@ h3 {
         grid-row: 5/6;
         grid-column: 2/4;
     }
+
+    .mediana {
+        width: 35rem;
+        height: 35rem;
+    }
+
+    .producto {
+        justify-items: center;
+        align-items: center;
+
+    }
+
+    .btnd {
+        text-transform: uppercase;
+        font-size: 1.5rem;
+
+
+    }
+
+
+}
+
+.borrar-curso {
+    background-color: red;
+    border-radius: 50%;
+    padding: 5px 10px;
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
 }
 
 /** Nosotros**/
@@ -302,4 +384,43 @@ h3 {
     cursor: pointer;
     background-color: var(--secundarioOscuro);
 
+}
+
+.submenu {
+    position: relative;
+}
+
+.submenu #carrito {
+    display: none;
+}
+
+.submenu:hover #carrito {
+    display: block;
+    position: absolute;
+    right: 0;
+
+    top: 100%;
+    z-index: 1;
+    background-color: white;
+    padding: 20px;
+    min-height: 400px;
+    min-width: 300px;
+}
+
+.vacio {
+    padding: 10px;
+    background-color: crimson;
+    text-align: center;
+    border-radius: 10px;
+    color: white;
+}
+
+ul {
+    list-style: none;
+}
+
+#img-carrito {
+    margin-top: 10px;
+    height: 3rem;
+    width: 4rem;
 }

@@ -5,8 +5,9 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/skeleton.css">
     <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/botones.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -24,155 +25,207 @@
     <nav class="navegacion">
         <a href="index.html" class="navegacion__enlace navegacion__enlace--activo">Tienda</a>
         <a href="nosotros.html" class="navegacion__enlace ">Nosotros</a>
+
+        <div class="two columns u-pull-right">
+            <ul>
+                <li class="submenu">
+                    <img src="img/cart.png" id="img-carrito">
+                    <div id="carrito">
+
+                        <table id="lista-carrito" class="u-full-width">
+                            <thead>
+                                <tr>
+                                    <th>Imagen</th>
+                                    <th>Nombre</th>
+                                    <th>Precio</th>
+                                    <th>Cantidad</th>
+                                    <th></th>
+                                </tr>
+                            </thead>
+                            <tbody></tbody>
+                        </table>
+
+                        <a href="#" id="vaciar-carrito" class="button u-full-width">Vaciar Carrito</a>
+                    </div>
+                </li>
+            </ul>
+        </div>
     </nav>
     <main class="contenedor">
         <h1>Nuestros productos</h1>
 
-        <div class="grid">
+        <div class="grid" id="lista-productos">
             <div class="producto">
                 <a href="producto.html">
-                    <img src="img/1.jpg" class="producto__imagen" alt="imagen funko">
-                    <div class="producto__informaccion">
-                        <p class="producto__nombre">Negan</p>
-                        <p class="producto__precio">$25</pcla>
-                    </div>
+                    <img src="img/1.jpg" class="product__image mediana" alt="imagen funko">
                 </a>
+                <div class="producto__informacion">
+                    <p class="producto__nombre">Negan</p>
+                    <p class="producto__precio">$25</p>
+                </div>
+
+                <button class="third btnd agregar-carrito" data-id="1">Agregar al carrito</button>
             </div>
             <!--.producto-->
             <div class="producto">
                 <a href="producto.html">
-                    <img src="img/2.jpg" class="product_image" alt="imagen funko">
-                    <div class="producto__informaccion">
-                        <p class="producto__nombre">Stitch</p>
-                        <p class="producto__precio">$23</pcla>
-                    </div>
+                    <img src="img/2.jpg" class="product_image mediana" alt="imagen funko">
                 </a>
+                <div class="producto__informacion">
+                    <p class="producto__nombre">Stitch</p>
+                    <p class="producto__precio">$23</p>
+                </div>
+
+                <button class="third btnd agregar-carrito" data-id="2">Agregar al carrito</button>
             </div>
             <!--.producto-->
             <div class="producto">
                 <a href="producto.html">
-                    <img src="img/3.jpg" class="product_image" alt="imagen funko">
-                    <div class="producto__informaccion">
-                        <p class="producto__nombre">Two face</p>
-                        <p class="producto__precio">$24</pcla>
-                    </div>
+                    <img src="img/3.jpg" class="product_image mediana" alt="imagen funko">
                 </a>
+                <div class="producto__informacion">
+                    <p class="producto__nombre">Two face</p>
+                    <p class="producto__precio">$24</p>
+                </div>
+
+                <button class=" third btnd agregar-carrito" data-id="3">Agregar al carrito</button>
             </div>
             <!--.producto-->
             <div class="producto">
                 <a href="producto.html">
-                    <img src="img/4.jpg" class="product_image" alt="imagen funko">
-                    <div class="producto__informaccion">
+                    <img src="img/4.jpg" class="product_image mediana" alt="imagen funko">
+                    <div class="producto__informacion">
                         <p class="producto__nombre">Germioni</p>
-                        <p class="producto__precio">$24</pcla>
+                        <p class="producto__precio">$24</p>
                     </div>
                 </a>
+                <button class="third btnd agregar-carrito" data-id="4">Agregar al carrito</button>
             </div>
             <!--.producto-->
             <div class="producto">
                 <a href="producto.html">
-                    <img src="img/5.jpg" class="product_image" alt="imagen funko">
-                    <div class="producto__informaccion">
-                        <p class="producto__nombre">Big boy</p>
-                        <p class="producto__precio">$24</pcla>
-                    </div>
+                    <img src="img/5.jpg" class="product_image mediana" alt="imagen funko">
                 </a>
+                <div class="producto__informacion">
+                    <p class="producto__nombre">Big boy</p>
+                    <p class="producto__precio">$24</p>
+                </div>
+
+                <button class="third btnd agregar-carrito" data-id="5">Agregar al carrito</button>
             </div>
             <!--.producto-->
             <div class="producto">
                 <a href="producto.html">
-                    <img src="img/6.jpg" class="product_image" alt="imagen funko">
-                    <div class="producto__informaccion">
-                        <p class="producto__nombre">Kiss</p>
-                        <p class="producto__precio">$24</pcla>
-                    </div>
+                    <img src="img/6.jpg" class="product_image mediana" alt="imagen funko">
                 </a>
+                <div class="producto__informacion">
+                    <p class="producto__nombre">Kiss</p>
+                    <p class="producto__precio">$24</p>
+                </div>
+
+                <button class="third btnd agregar-carrito" data-id="6">Agregar al carrito</button>
             </div>
             <!--.producto-->
             <div class="producto">
                 <a href="producto.html">
-                    <img src="img/7.jpg" class="product_image" alt="imagen funko">
-                    <div class="producto__informaccion">
-                        <p class="producto__nombre">Joker</p>
-                        <p class="producto__precio">$24</pcla>
-                    </div>
+                    <img src="img/7.jpg" class="product_image mediana" alt="imagen funko">
                 </a>
+                <div class="producto__informacion">
+                    <p class="producto__nombre">Joker</p>
+                    <p class="producto__precio">$24</p>
+                </div>
+
+                <button class="third btnd agregar-carrito" data-id="7">Agregar al carrito</button>
             </div>
             <!--.producto-->
             <div class="producto">
                 <a href="producto.html">
-                    <img src="img/8.jpg" class="product_image" alt="imagen funko">
-                    <div class="producto__informaccion">
-                        <p class="producto__nombre">Sulley</p>
-                        <p class="producto__precio">$24</pcla>
-                    </div>
+                    <img src="img/8.jpg" class="product_image mediana" alt="imagen funko">
                 </a>
+                <div class="producto__informacion">
+                    <p class="producto__nombre">Sulley</p>
+                    <p class="producto__precio">$24</p>
+                </div>
+
+                <button class="third btnd agregar-carrito" data-id="8">Agregar al carrito</button>
             </div>
             <!--.producto-->
             <div class="producto">
                 <a href="producto.html">
-                    <img src="img/9.jpg" class="product_image" alt="imagen funko">
-                    <div class="producto__informaccion">
-                        <p class="producto__nombre">Eleven</p>
-                        <p class="producto__precio">$24</pcla>
-                    </div>
+                    <img src="img/9.jpg" class="product_image mediana" alt="imagen funko">
                 </a>
+                <div class="producto__informacion">
+                    <p class="producto__nombre">Eleven</p>
+                    <p class="producto__precio">$24</p>
+                </div>
+
+                <button class="third btnd agregar-carrito" data-id="9">Agregar al carrito</button>
             </div>
             <!--.producto-->
             <div class="producto">
                 <a href="producto.html">
-                    <img src="img/10.jpg" class="product_imag" alt="imagen funko">
-                    <div class="producto__informaccion">
-                        <p class="producto__nombre">Donald Trumph</p>
-                        <p class="producto__precio">$24</pcla>
-                    </div>
+                    <img src="img/10.jpg" class="product_image mediana" alt="imagen funko">
                 </a>
+                <div class="producto__informacion">
+                    <p class="producto__nombre">Donald Trumph</p>
+                    <p class="producto__precio">$24</p>
+                </div>
+
+                <button class="third btnd agregar-carrito" data-id="10">Agregar al carrito</button>
             </div>
             <!--.producto-->
             <div class="producto">
                 <a href="producto.html">
-                    <img src="img/11.jpg" class="product_imag" alt="imagen funko">
-                    <div class="producto__informaccion">
-                        <p class="producto__nombre">Master Roshi</p>
-                        <p class="producto__precio">$24</pcla>
-                    </div>
+                    <img src="img/11.jpg" class="product_image mediana" alt="imagen funko">
                 </a>
+                <div class="producto__informacion">
+                    <p class="producto__nombre">Master Roshi</p>
+                    <p class="producto__precio">$24</p>
+                </div>
+
+                <button class="third btnd agregar-carrito" data-id="11">Agregar al carrito</button>
             </div>
             <!--.producto-->
             <div class="producto">
                 <a href="producto.html">
-                    <img src="img/12.jpg" class="product_imag" alt="imagen funko">
-                    <div class="producto__informaccion">
-                        <p class="producto__nombre">Vegeta</p>
-                        <p class="producto__precio">$24</pcla>
-                    </div>
+                    <img src="img/12.jpg" class="product_image mediana" alt="imagen funko">
                 </a>
+                <div class="producto__informacion">
+                    <p class="producto__nombre">Vegeta</p>
+                    <p class="producto__precio">$24</p>
+                </div>
+
+                <button class="third btnd agregar-carrito" data-id="12">Agregar al carrito</button>
             </div>
             <!--.producto-->
             <div class="producto">
                 <a href="producto.html">
-                    <img src="img/13.jpg" class="product_imag" alt="imagen funko">
-                    <div class="producto__informaccion">
-                        <p class="producto__nombre">Levi</p>
-                        <p class="producto__precio">$24</pcla>
-                    </div>
+                    <img src="img/13.jpg" class="product_image mediana" alt="imagen funko">
                 </a>
+                <div class="producto__informacion">
+                    <p class="producto__nombre">Levi</p>
+                    <p class="producto__precio">$24</p>
+                </div>
+
+                <button class="third btnd agregar-carrito" data-id="13">Agregar al carrito</button>
             </div>
             <!--.producto-->
             <div class="producto">
                 <a href="producto.html">
-                    <img src="img/15.jpg" class="product_imag" alt="imagen funko">
-                    <div class="producto__informaccion">
+                    <img src="img/15.jpg" class="product_image mediana" alt="imagen funko">
+                </a>
+                    <div class="producto__informacion">
                         <p class="producto__nombre">Roy Mustang</p>
-                        <p class="producto__precio">$24</pcla>
+                        <p class="producto__precio">$24</p>
                     </div>
-                </a>
+                
+                <button class="third btnd agregar-carrito" data-id="14">Agregar al carrito</button>
             </div>
             <!--.producto-->
             <div class="grafico grafico--thor">
 
             </div>
-            
+
             <div class="grafico grafico--camisa">
 
             </div>
@@ -183,7 +236,7 @@
         <p class="footer__texto">&copy;Funko Store - Todos los derechos reservados 2022.</p>
     </footer>
 
-
+    <script src="JS/app.js"></script>
 </body>
 
 </html>
